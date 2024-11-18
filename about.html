@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMSCE IEEE WIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="home.html"><img src="WIE-Logo.png" alt="WIE Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li> 
+                    <li><a href="#events">FLAGSHIP EVENTS</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>About Us</h1>
+
+    </section>
+
+    <!-- Goals Section with animation -->
+    <section class="aboutus">
+        <div class="row">
+            <div class="about-col">
+            <h1>IEEE Women in Engineering</h1>
+            <p>The BMSCE IEEE WIE (Women in Engineering) Affinity Group is an active student chapter under the Bangalore section of IEEE. It is part of the global IEEE Women in Engineering (WIE) initiative, which aims to inspire, engage, and empower women engineers, scientists, and technologists worldwide.
+
+                BMSCE stands for B.M.S. College of Engineering, a prestigious engineering institution located in Bangalore, India. The IEEE WIE affinity group at BMSCE is dedicated to fostering an inclusive community that supports diversity, collaboration, and professional growth in technology.
+                it comes under Bangalore section of IEEE. It is part of the global IEEE Women in Engineering (WIE) initiative, which aims to inspire, engage, and empower women engineers, scientists, and technologists worldwide.Click here to know more about the banglore section</p>
+             
+            </p>
+            <a href="https://ieeebangalore.org/" class="hero-btn red-btn">EXPLORE MORE</a>
+            </div>
+            <div class="about-col">
+                <img src="aboutus.jpeg">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer with hover effects -->
+    <section class="footer">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bmsce_wie/" target="_blank" aria-label="Instagram" class="social-link">
+                <i class="fab fa-instagram"></i> ieee.wie
+            </a>
+            <a href="https://www.linkedin.com/company/bmsce-ieee-wie/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:ieeewie@bmsce.ac.in" aria-label="Email" class="social-link">
+                <i class="fa fa-envelope"></i> ieeewie@bmsce.ac.in
+            </a>
+        </div>
+        <p class="footer-copy">© 2024 BMSCE IEEE WIE. All Rights Reserved.</p>
+    </section>
+    <!---aboutus-->
+      
+    </section>
+    <!-- JavaScript for menu toggle -->
+    <script>
+        function showmenu() {
+            document.getElementById("navlinks").style.right = "0";
+        }
+        function hidemenu() {
+            document.getElementById("navlinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

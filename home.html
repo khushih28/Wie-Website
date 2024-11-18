@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMSCE IEEE WIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header"> 
+        <nav>
+            <a href="home.html"><img src="WIE-Logo.png" alt="WIE Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li> 
+                    <li><a href="#events">FLAGSHIP EVENTS</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="http://127.0.0.1:5500/about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>BMSCE IEEE Women in Engineering</h1>
+            <p>The Institute for Electrical and Electronics Engineers aims to inspire and educate future engineers.</p>
+            <a href="#" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+    <!-- Goals Section with animation -->
+    <section id="goals" class="flagship">
+        <h1>Our Goals</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Equality</h3>
+                <p>The Outreach Program inspires young women in engineering with workshops and activities to pursue STEM careers.</p>
+            </div>
+            <div class="course-col">
+                <h3>Empower</h3>
+                <p>Nexus is a mentoring program that connects budding women engineers with experienced mentors.</p>
+            </div>
+            <div class="course-col">
+                <h3>Impact</h3>
+                <p>WIE Day celebrates achievements of women in engineering with talks, workshops, and interactive sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us CTA with animated background -->
+    <section class="cta">
+        <h1>Join us today and be part of a community that empowers women in engineering!</h1>
+        <a href="#contact" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer with hover effects -->
+    <section class="footer">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bmsce_wie/" target="_blank" aria-label="Instagram" class="social-link">
+                <i class="fab fa-instagram"></i> ieee.wie
+            </a>
+            <a href="https://www.linkedin.com/company/bmsce-ieee-wie/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:ieeewie@bmsce.ac.in" aria-label="Email" class="social-link">
+                <i class="fa fa-envelope"></i> ieeewie@bmsce.ac.in
+            </a>
+        </div>
+        <p class="footer-copy">© 2024 BMSCE IEEE WIE. All Rights Reserved.</p>
+    </section>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+        function showmenu() {
+            document.getElementById("navlinks").style.right = "0";
+        }
+        function hidemenu() {
+            document.getElementById("navlinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
