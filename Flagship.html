@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMSCE IEEE WIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="home.html"><img src="WIE-Logo.png" alt="WIE Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/home.html">HOME</a></li> 
+                    <li><a href="http://127.0.0.1:5500/Flagship.html">FLAGSHIP EVENTS</a></li>
+                    <li><a href="http://127.0.0.1:5500/The%20team.html">TEAM</a></li>
+                    <li><a href="http://127.0.0.1:5500/about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>FLAGSHIP EVENTS</h1>
+
+    </section>
+
+    <!-- Goals Section with animation -->
+
+   
+        
+    <section class="event-section">
+        <div class="event-container">
+            <div class="event-image">
+                <img src="NEXUS.jpeg" alt="Person Coding">
+            </div>
+            <div class="event-content">
+                <h1>NEXUS</h1>
+                <p>
+                    IEEE Xtreme is a 24-hour code-a-thon conducted by IEEE annually for its members...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="event-container">
+            <div class="event-image">
+                <img src="WIEDAY.jpeg" alt="Team Collaboration">
+            </div>
+            <div class="event-content">
+                <h1>WIE DAY</h1>
+                <p>
+                    Details about another event go here...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="event-container">
+            <div class="event-image">
+                <img src="OutReach.jpeg" alt="Team Collaboration">
+            </div>
+            <div class="event-content">
+                <h1>OutReach</h1>
+                <p>
+                    Details about another event go here...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="event-container">
+            <div class="event-image">
+                <img src="hACKATHONS.jpeg" alt="Team Collaboration">
+            </div>
+            <div class="event-content">
+                <h1>Hackathon and Codeathon</h1>
+                <p>
+                    Details about another event go here...
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer with hover effects -->
+    <section class="footer">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bmsce_wie/" target="_blank" aria-label="Instagram" class="social-link">
+                <i class="fab fa-instagram"></i> ieee.wie
+            </a>
+            <a href="https://www.linkedin.com/company/bmsce-ieee-wie/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:ieeewie@bmsce.ac.in" aria-label="Email" class="social-link">
+                <i class="fa fa-envelope"></i> ieeewie@bmsce.ac.in
+            </a>
+        </div>
+        <p class="footer-copy">© 2024 BMSCE IEEE WIE. All Rights Reserved.</p>
+    </section>
+    <!---aboutus-->
+      
+    </section>
+    <!-- JavaScript for menu toggle -->
+    <script>
+        function showmenu() {
+            document.getElementById("navlinks").style.right = "0";
+        }
+        function hidemenu() {
+            document.getElementById("navlinks").style.right = "-200px";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".event-section");
+        
+            const observerOptions = {
+                root: null, // Viewport as root
+                threshold: 0.1, // Trigger when 10% of the section is visible
+            };
+        
+            const observerCallback = (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target); // Stop observing after it becomes visible
+                    }
+                });
+            };
+        
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+        
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+        });
+        
+    </script>
+</body>
+</html>
